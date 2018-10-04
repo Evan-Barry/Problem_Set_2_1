@@ -60,20 +60,16 @@ public class BankAccount {
         //this("0", 0.00,p2); */
     }
 
-    public void lodgeMoney(double balance, double lodgement)
+    public void lodgeMoney(double lodgement)
     {
-        balance = (getBalance() + lodgement);
-
-        setBalance(balance);
+        setBalance(getBalance() + lodgement);
 
         JOptionPane.showMessageDialog(null, "Your balance is now: " + String.format("€%.2f",getBalance()));
     }
 
-    public void withdrawMoney(double balance, double withdrawl)
+    public void withdrawMoney(double withdrawl)
     {
-        balance = (getBalance() - withdrawl);
-
-        setBalance(balance);
+        setBalance(getBalance() - withdrawl);
 
         JOptionPane.showMessageDialog(null, "Your balance is now: " + String.format("€%.2f",getBalance()));
     }

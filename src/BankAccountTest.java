@@ -15,10 +15,10 @@ public class BankAccountTest {
 
         double lodgement = Double.parseDouble(JOptionPane.showInputDialog("How much would you like to lodge?"));
 
-        b1.lodgeMoney(b1.getBalance(),lodgement);
+        b1.lodgeMoney(lodgement);
 
         double withdrawl = Double.parseDouble(JOptionPane.showInputDialog("How much would you like to withdraw?"));
 
-        b1.withdrawMoney(b1.getBalance(),withdrawl);
+        b1.withdrawMoney(withdrawl);
     }
 }
