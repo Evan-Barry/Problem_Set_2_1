@@ -9,7 +9,7 @@ public class BankAccountArrayTest {
 
         for(int i = 0; i < baArray.length; i++)
         {
-            ba = new BankAccount;
+            ba = new BankAccount();
             ba.setBalance(Double.parseDouble(JOptionPane.showInputDialog("Enter balance")));
             ba.setAccNum("1" + i);
 
